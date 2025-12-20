@@ -1,0 +1,17 @@
+import "./SeriesItem.css"
+
+export default function SeriesItem({obj}){
+    const isCardio = obj.category === "cardio"
+    return(
+        <div className="divSeriesItem">
+            <div className="divCategory">
+                <p>{obj.category}</p>
+            </div>
+            <div className="divDetails">
+                <p>{obj.exercise}</p>
+                {isCardio ? <p>-</p> : <p>{obj.repetitions}</p>}
+                {isCardio ? <p>{obj.time}</p> : <p>{obj.weight}</p>}
+            </div>
+        </div>
+    )
+}

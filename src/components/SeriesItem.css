@@ -1,0 +1,28 @@
+.divSeriesItem{
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+    border-style: solid;
+    border-radius: 15%;
+    border-color: #344CB7;
+    background-color: #344CB7;
+    color: #F0F0F0
+}
+
+.divCategory{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid;
+}
+
+.divDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divDetails p{
+    flex: 1
+}
