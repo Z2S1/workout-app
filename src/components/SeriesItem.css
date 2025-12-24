@@ -6,14 +6,37 @@
     border-radius: 15%;
     border-color: #344CB7;
     background-color: #344CB7;
-    color: #F0F0F0
+    color: #F0F0F0;
+    padding: 3%;
 }
 
 .divCategory{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     border-bottom: 1px solid;
+    align-items: center;
+    font-size: 1.25em;
+}
+
+.div_icon{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.subdiv_category{
+    flex: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.serie-icon {
+  width: 1.50em;
+  height: 1.50em;
 }
 
 .divDetails{
@@ -22,6 +45,8 @@
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 .divDetails p{
     flex: 1

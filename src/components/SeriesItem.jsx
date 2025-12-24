@@ -1,3 +1,4 @@
+import DumbbellIcon from "../assets/icons/gym-svgrepo-com.svg"
 import "./SeriesItem.css"
 
 export default function SeriesItem({obj}){
@@ -5,7 +6,12 @@ export default function SeriesItem({obj}){
     return(
         <div className="divSeriesItem">
             <div className="divCategory">
-                <p>{obj.category}</p>
+                <div className="div_icon">
+                    <img src={DumbbellIcon} className="serie-icon"/>
+                </div>
+                <div className="subdiv_category">
+                    <p>{obj.category}</p>
+                </div>
             </div>
             <div className="divDetails">
                 <p>{obj.exercise}</p>
