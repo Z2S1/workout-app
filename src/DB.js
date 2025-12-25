@@ -65,3 +65,15 @@ export async function getAllByDate(date){
         request.onerror = () => reject(request.error)
     }))
 }
+
+export async function getAllData(){
+    const database = await dbReady
+    const transaction = database.transaction("workoutSeries","readonly")
+    const store = transaction.objectStore("workoutSeries")
+
+    return (new Promise((resolve,reject) =>{
+        const request = store.getAll()
+        request.onsuccess = () => resolve(request.result)
+        request.onerror = () => reject(request.error)
+    }))
+}
